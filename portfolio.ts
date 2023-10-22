@@ -352,6 +352,12 @@ export const experience: ExperienceType[] = [
 
 export const projects: ProjectType[] = [
   {
+    name: 'My Portfolio Hosted in AWS',
+    desc: 'My Developer Portfolio Website built with Next.js, React, Bootstrap, and hosted in AWS Cloud that helps showcase my work and skills as a Software Engineer.',
+    github: 'https://github.com/jekeytimoy29/my-portfolio',
+    link: 'https://timothyjakeflordelis.xyz/',
+  },
+  {
     name: 'Camila and Amber Movies App',
     desc: 'An app where it shows movies collection and user can register, add their comments about each movie. An admin account can manage movies and users of the app. Implemented the whole MERN stack app. Utilized AWS, React, Node, Express, MongoDB and Docker.',
     github: 'https://github.com/jekeytimoy29/CamilaAndAmberMoviesAWSAmplify',

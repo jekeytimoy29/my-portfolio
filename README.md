@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to My Software Engineer Portfolio 👋</h1>
 
-## My Developer Portfolio Template built with Next.js, React, bootstrap that helps showcase my work and skills as a Software Engineer.
+## My Developer Portfolio Website built with Next.js, React, Bootstrap, and hosted in AWS Cloud that helps showcase my work and skills as a Software Engineer.
 
 <p align="center">
   <kbd>
@@ -8,13 +8,13 @@
   </kbd>
 </p>
 
-## To go to the website, Please **[click here](https://developer-portfolio-1hanzla100.vercel.app/)**.
+## To go to the website, Please **[click here](https://timothyjakeflordelis.xyz/)**.
 
 ## Author
 
 👤 **Timothy Jake Flordelis**
 
-- Website:
+- Website: https://timothyjakeflordelis.xyz/
 - Github: https://github.com/jekeytimoy29
 - LinkedIn: https://www.linkedin.com/in/timothy-jake-flordelis/
 
