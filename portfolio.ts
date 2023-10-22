@@ -277,7 +277,7 @@ export const educationInfo: EducationType[] = [
 
 export const experience: ExperienceType[] = [
   {
-    role: 'Software Engineer // Mobile Developer',
+    role: 'Software Engineer / Mobile Developer',
     company: 'Lexmark',
     companyLogo: '/img/icons/common/LexmarkLogo.jpg',
     date: 'August 2021 – October 2022',
