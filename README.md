@@ -1,5 +1,14 @@
 <h1 align="center">Welcome to My Software Engineer Portfolio 👋</h1>
 
+## Daily updates
+
+- Oct. 20, 2023 - Started implementing the Next.js/React FrontEnd.
+- Oct. 21, 2023 - Created Github Repo and then commit the changes made in the FrontEnd.
+- Oct. 21, 2023 - Setup AWS CloudFront, S3, Route53 with the domain name to host the Portfolio Website. Portfolio Website is now live.
+- Oct. 22, 2023 - Setup API Gateway, Lambda functions, SNS, SQS, and DynamoDB as the backend for the Portfolio porject.
+- Oct. 23, 2023 - Integrating the frontend and backend implementations.
+- Oct. 23, 2023 - Added Form Validations when sending message from the frontend to backend.
+
 ## My Developer Portfolio Website built with Next.js, React, Bootstrap, and hosted in AWS Cloud that helps showcase my work and skills as a Software Engineer.
 
 <p align="center">
