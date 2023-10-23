@@ -25,8 +25,8 @@ export default function Home({
       <Navigation />
       <Greetings />
       <Skills />
-      <Experience />
       <Proficiency />
+      <Experience />
       <Education />
       <Projects />
       {showContactUs ? <Contact /> : null}

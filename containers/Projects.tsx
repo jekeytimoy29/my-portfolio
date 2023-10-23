@@ -6,7 +6,7 @@ import ProjectsCard from '../components/ProjectsCard';
 const Projects = () => {
   return (
     projects && (
-      <section className="section section-lg">
+      <section className="section section-lg" id="projects">
         <Container>
           <div className="d-flex p-4">
             <div>
@@ -15,7 +15,9 @@ const Projects = () => {
               </div>
             </div>
             <div className="pl-4">
-              <h4 className="display-3 text-info">Academic and Personal Projects</h4>
+              <h4 className="display-3 text-info">
+                Academic and Personal Projects
+              </h4>
             </div>
           </div>
           <Row className="row-grid align-items-center">

@@ -6,7 +6,7 @@ import ExperienceCard from '../components/ExperienceCard';
 const Experience = () => {
   return (
     experience && (
-      <section className="section section-lg">
+      <section className="section section-lg" id="experience">
         <Container>
           <div className="d-flex p-4">
             <div>
