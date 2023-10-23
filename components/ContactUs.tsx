@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
 import classnames from 'classnames';
 import Alert from './Alerts';
+import { addMessageApi } from '../datasource/api/messages-api';
 
 import {
   Button,
@@ -84,13 +84,14 @@ export const ContactUs = () => {
     return !Object.values(newErrors).some((error) => !!error);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (validateForm()) {
-      // Form is valid, submit or perform other actions here
       console.log('Form is valid');
+      const response: any = await addMessageApi(formData);
+      if (response === null) setAlert(errorAlert);
+      else setAlert(successAlert);
     } else {
-      // Form is invalid, you can display error messages or take other actions
       console.log('Form is invalid');
     }
   };
@@ -189,124 +190,6 @@ export const ContactUs = () => {
       </section>
     </>
   );
-
-  /*
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log('submitting');
-
-    console.log(form.current);
-
-    const emailJsServiceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-
-    const emailJsTemplateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-
-    const emailJsPublicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-
-    if (
-      emailJsServiceId &&
-      emailJsTemplateId &&
-      emailJsPublicKey &&
-      form.current
-    ) {
-      emailjs
-        .sendForm(
-          emailJsServiceId,
-          emailJsTemplateId,
-          form.current,
-          emailJsPublicKey
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            setAlert(successAlert);
-          },
-          (error) => {
-            console.log(error.text);
-            setAlert(errorAlert);
-          }
-        );
-    }
-  };
-
-  return (
-    <>
-      <section className="section section-lg section-shaped">
-        <form ref={form} onSubmit={sendEmail}>
-          {alert && (
-            <Alert
-              color={alert.color}
-              icon={alert.icon}
-              message={alert.message}
-            />
-          )}
-          <Container>
-            <Row className="justify-content-center">
-              <Col lg="8">
-                <Card className="bg-gradient-secondary shadow">
-                  <CardBody className="p-lg-5">
-                    <h4 className="mb-1">Ready to Collaborate?  Let&apos;s Make Great Things Happen!</h4>
-                    <p className="mt-0">
-                    Feel Free to Reach Out via the Form Below:
-                    </p>
-                    <FormGroup className={classnames('mt-5', {})}>
-                      <InputGroup className="input-group-alternative">
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="ni ni-user-run" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input
-                          placeholder="Your name"
-                          type="text"
-                          name="user_name"
-                        />
-                      </InputGroup>
-                    </FormGroup>
-                    <FormGroup className={classnames({})}>
-                      <InputGroup className="input-group-alternative">
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="ni ni-email-83" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input
-                          placeholder="Email address"
-                          name="user_email"
-                          type="email"
-                        />
-                      </InputGroup>
-                    </FormGroup>
-                    <FormGroup className="mb-4">
-                      <Input
-                        className="form-control-alternative"
-                        cols="80"
-                        name="user_message"
-                        placeholder="Type a message..."
-                        rows="4"
-                        type="textarea"
-                      />
-                    </FormGroup>
-                    <div>
-                      <Button
-                        block
-                        className="btn-round"
-                        color="default"
-                        size="lg"
-                        type="submit"
-                      >
-                        Send Message
-                      </Button>
-                    </div>
-                  </CardBody>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-        </form>
-      </section>
-    </>
-  );*/
 };
 
 export default ContactUs;
