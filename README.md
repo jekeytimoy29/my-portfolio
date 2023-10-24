@@ -8,6 +8,7 @@
 - Oct. 22, 2023 - Setup API Gateway, Lambda functions, SNS, SQS, and DynamoDB as the backend for the Portfolio porject.
 - Oct. 23, 2023 - Integrating the frontend and backend implementations.
 - Oct. 23, 2023 - Added Form Validations when sending message from the frontend to backend.
+- Oct. 24, 2023 - Created a blog on medium about how I designed and implemented the website.
 
 ## My Developer Portfolio Website built with Next.js, React, Bootstrap, and hosted in AWS Cloud that helps showcase my work and skills as a Software Engineer.
 
@@ -18,6 +19,16 @@
 </p>
 
 ## To go to the website, Please **[click here](https://timothyjakeflordelis.xyz/)**.
+
+## Presenting my AWS services diagram, spanning from frontend web hosting to the backend API responsible for managing and dispatching messages to my registered email.
+
+<p align="center">
+  <kbd>
+    <img src="https://github.com/jekeytimoy29/my-portfolio/blob/master/aws_services_diagram.png"></img>
+  </kbd>
+</p>
+
+## For more information on the design and implementation of the Portfolio Website, Please see my **[blog](https://medium.com/@jake.flordelis/building-a-software-engineer-portfolio-with-next-js-react-and-aws-hosting-cd3d1eeb0912)**.
 
 ## Author
 
