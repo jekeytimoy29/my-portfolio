@@ -8,6 +8,7 @@ import {
   SEODataType,
   SocialLinksType,
   GreetingsType,
+  BlogsType,
 } from './types/sections';
 
 export const greetings: GreetingsType = {
@@ -395,6 +396,14 @@ export const projects: ProjectType[] = [
   {
     name: 'Pic-Based Apartment Doorkeeper – Solution to Encroachment',
     desc: 'Built embedded system to control door locks that allow entry by entering correct codes in keypad. Led team as final project for Computer Engineering course. Utilized Peripheral Interface Controller Programming (PIC).',
+  },
+];
+
+export const blogs : BlogsType[] = [
+  {
+    title: "Building a Software Engineer Portfolio with Next.js, React, and AWS Hosting",
+    snippet: "I’ve had a burning desire to craft a digital showcase of my journey as a Software Engineer — a vibrant canvas where I can paint a picture of my academic and personal achievements, my skillsets, and my unwavering passion for cutting-edge technologies. I invite you to delve into the depths of my experiences as a tech enthusiast and join me on this riveting journey. Without further delay, let’s embark on the adventure of building my Software Engineer portfolio. May it not only offer insights into your own path but also be an enjoyable ride through my world of code and creativity....",
+    link: "https://medium.com/@jake.flordelis/building-a-software-engineer-portfolio-with-next-js-react-and-aws-hosting-cd3d1eeb0912"
   },
 ];
 

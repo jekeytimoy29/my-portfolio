@@ -82,6 +82,9 @@ const Navigation = () => {
                   <NavLink href="#projects">Projects</NavLink>
                 </NavItem>
                 <NavItem>
+                  <NavLink href="#blogs">Blogs</NavLink>
+                </NavItem>
+                <NavItem>
                   <NavLink href="#contact">Contact</NavLink>
                 </NavItem>
               </Nav>

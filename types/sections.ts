@@ -79,3 +79,11 @@ export type ProjectType = {
   github?: string;
   link?: string;
 };
+
+// * BLOGS SECTION
+
+export type BlogsType = {
+  title: string;
+  snippet: string;
+  link: string;
+};
